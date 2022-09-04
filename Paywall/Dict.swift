@@ -126,6 +126,17 @@ extension Dictionary {
         }
     }
     
+    subscript(gf idx: Key) -> CGFloat {
+        get {
+            return self[idx] as? CGFloat ?? CGFloat(self[idx] as? Double ?? 0.0)
+        }
+        set {
+            if let v = newValue as? Value {
+                self[idx] = v
+            }
+        }
+    }
+    
     subscript(f0 idx: Key) -> Float? {
         get {
             if let res = self[idx] as? Float {
@@ -284,5 +295,39 @@ public struct UsesAutoLayout<T: UIView> {
     public init(wrappedValue: T) {
         self.wrappedValue = wrappedValue
         wrappedValue.translatesAutoresizingMaskIntoConstraints = false
+    }
+}
+
+
+protocol Storyboarded {
+    static func instantiate() -> UIViewController?
+    static func instantiateWithNav() -> UIViewController?
+    static var storyboardName: String {get}
+}
+
+extension Storyboarded where Self: UIViewController {
+    static func instantiate() -> UIViewController? {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: .main)
+        return storyboard.instantiateInitialViewController() as? Self
+    }
+    
+    static func instantiateWithNav() -> UIViewController? {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: .main)
+        let navVc =  storyboard.instantiateInitialViewController() as? UINavigationController
+        return navVc?.viewControllers.first as? Self
+    }
+
+    static var storyboardName: String {
+        String(describing: Self.self).hasSuffix("VC") ? (String(describing: Self.self) as NSString).replacingOccurrences(of: "VC", with: "") : String(describing: Self.self)
+    }
+}
+
+public extension UIStoryboard {
+    /// SwifterSwift: Instantiate a UIViewController using its class name.
+    ///
+    /// - Parameter name: UIViewController type.
+    /// - Returns: The view controller corresponding to specified class name.
+    func instantiateViewController<T: UIViewController>(withClass name: T.Type) -> T? {
+        return instantiateViewController(withIdentifier: String(describing: name)) as? T
     }
 }

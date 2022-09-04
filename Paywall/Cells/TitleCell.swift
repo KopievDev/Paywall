@@ -25,8 +25,11 @@ class EmptyCell: ReusableCell {
     
     override func render(data: Cell) {
         let config = data.data
-        heightCnstr.constant = CGFloat(config[f:"height"])
-        updateConstraints()
+        let height = config[gf:"height"]
+        heightCnstr.isActive = false
+        heightCnstr.constant = height
+        heightCnstr.isActive = true
+        layoutIfNeeded()
     }
 
 }

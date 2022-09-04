@@ -9,9 +9,9 @@ import UIKit
 typealias IndexBlock = (Int) -> Void
 typealias StringBlock = (String) -> Void
 
-class ViewController: UIViewController {
+class MainVC: UIViewController, Storyboarded {
 
-    private var screenName: String = "paywall"
+    var screenName: String = "paywall"
     @IBOutlet var tableView: UITableView!
     lazy var dataSource: Listable = DataSource(tableView: tableView, data: cells)
     private var cells: Cells = [] {
@@ -44,8 +44,11 @@ class ViewController: UIViewController {
             print("TRYYYY!!!")
         }
         
-        let deeplincAction: StringBlock  = { deeplink in
+        let deeplincAction: StringBlock  = { [weak self] deeplink in
             print(deeplink)
+            let vc = MainVC.instantiate() as? MainVC
+            vc?.screenName = "onboarding"
+            self?.present(vc!, animated: true)
         }
         
         let termsAction: IndexBlock = { number in
