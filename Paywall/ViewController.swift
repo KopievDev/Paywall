@@ -7,10 +7,11 @@
 
 import UIKit
 typealias IndexBlock = (Int) -> Void
-typealias CellBlock = (Int) -> Void
+typealias StringBlock = (String) -> Void
 
 class ViewController: UIViewController {
 
+    private var screenName: String = "paywall"
     @IBOutlet var tableView: UITableView!
     lazy var dataSource: Listable = DataSource(tableView: tableView, data: cells)
     private var cells: Cells = [] {
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Firebase.getPaywall { [weak self] in
+        Firebase.getScreen(name: screenName) {  [weak self] in
             self?.cells = $0
             self?.addAction()
         }
@@ -43,6 +44,10 @@ class ViewController: UIViewController {
             print("TRYYYY!!!")
         }
         
+        let deeplincAction: StringBlock  = { deeplink in
+            print(deeplink)
+        }
+        
         let termsAction: IndexBlock = { number in
             print(number)
         }
@@ -55,6 +60,7 @@ class ViewController: UIViewController {
             
             if cells[index].reuseId == "ButtonCell" {
                 cells[index].data["action"] = tryAction
+                cells[index].data["deeplinkAction"] = deeplincAction
             }
             
             if cells[index].reuseId == "TermsCell" {

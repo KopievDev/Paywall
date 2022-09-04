@@ -63,6 +63,7 @@ class SubscribeView: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         addSubview(buttom)
         addSubview(selectedLabel)
+        buttom.startAnimatingPressActions()
         selectedLabel.isHidden = !isSelected
         buttom.isSelected = isSelected
         NSLayoutConstraint.activate([
