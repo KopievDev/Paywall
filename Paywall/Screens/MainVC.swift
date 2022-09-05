@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  Paywall
 //
 //  Created by Ivan Kopiev on 04.09.2022.
@@ -76,9 +76,4 @@ class MainVC: UIViewController, Storyboarded {
             }
         }
     }
-}
-
-extension UITableView {
-    var isNeedInsertEmptyCell: Bool { frame.height > contentSize.height }
-    var diffHeight: CGFloat { frame.height - contentSize.height }
 }

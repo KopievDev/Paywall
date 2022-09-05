@@ -1,5 +1,5 @@
 //
-//  Dict.swift
+//  Extensions.swift
 //  Paywall
 //
 //  Created by Ivan Kopiev on 04.09.2022.
@@ -343,5 +343,112 @@ public extension UIStoryboard {
     /// - Returns: The view controller corresponding to specified class name.
     func instantiateViewController<T: UIViewController>(withClass name: T.Type) -> T? {
         return instantiateViewController(withIdentifier: String(describing: name)) as? T
+    }
+}
+
+extension UITableView {
+    var isNeedInsertEmptyCell: Bool { frame.height > contentSize.height }
+    var diffHeight: CGFloat { frame.height - contentSize.height }
+}
+
+extension UIApplication {
+    
+    open class func topViewController() -> UIViewController? {
+        
+        if var vc = UIApplication.shared.keyWindow?.rootViewController{
+            
+            if vc is UITabBarController{
+                vc = (vc as! UITabBarController).selectedViewController!
+            }
+            
+            if vc is UINavigationController{
+                vc = (vc as! UINavigationController).topViewController!
+            }
+            
+            while ((vc.presentedViewController) != nil &&
+                (String(describing: type(of: vc.presentedViewController!)) != "SFSafariViewController") &&
+                (String(describing: type(of: vc.presentedViewController!)) != "UIAlertController")) {
+                    vc = vc.presentedViewController!
+                    if vc is UINavigationController{
+                        vc = (vc as! UINavigationController).topViewController!
+                    }
+            }
+            
+            return vc;
+            
+        } else {
+            return nil
+        }
+        
+    }
+}
+
+extension URL {
+    var queryDictionary: [String: Any]? {
+        guard let query = self.query else { return nil}
+        var queryStrings = [String: Any]()
+        for pair in query.components(separatedBy: "&") {
+            let key = pair.components(separatedBy: "=")[0]
+            let value = pair
+                .components(separatedBy:"=")[1]
+                .replacingOccurrences(of: "+", with: " ")
+                .removingPercentEncoding ?? ""
+            if value == "false" || value == "true" {
+                queryStrings[key] = value == "true" ? true:false
+            } else {
+                queryStrings[key] = value
+            }
+        }
+        return queryStrings
+    }
+}
+
+extension UIView {
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+            if newValue > 0 {
+                layer.masksToBounds = true
+            }
+        }
+        get { return layer.cornerRadius }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        set { layer.borderWidth = newValue / UIScreen.main.scale}
+        get { return layer.borderWidth * UIScreen.main.scale }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        set { layer.borderColor = newValue?.cgColor  }
+        get { return (layer.borderColor != nil ? UIColor(cgColor: layer.borderColor!) : nil) }
+    }
+    
+}
+
+extension UIButton {
+    
+    convenience init(text: String, deeplink: String?) {
+        self.init(frame: .zero)
+        setTitle(text, for: .normal)
+        accessibilityLabel = deeplink
+    }
+    
+    @objc public func animateIn(view: UIView) {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseIn) {
+            view.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }
+    }
+    
+    @objc public func animateOut(view viewToAnimate: UIView) {
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 1, options: .curveEaseIn) {
+            viewToAnimate.transform = .identity
+        }
+    }
+    
+    func startAnimatingPressActions() {
+        addTarget(self, action: #selector(animateIn(view:)), for: [.touchDown, .touchDragEnter])
+        addTarget(self, action: #selector(animateOut(view:)), for: [.touchDragExit, .touchCancel, .touchUpInside, .touchUpOutside])
     }
 }

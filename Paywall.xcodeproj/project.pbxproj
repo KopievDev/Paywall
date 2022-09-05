@@ -11,9 +11,13 @@
 		B565DE8328C617EB005E36FB /* Deeplinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8228C617EB005E36FB /* Deeplinker.swift */; };
 		B565DE8528C61BCD005E36FB /* BoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8428C61BCD005E36FB /* BoxCell.swift */; };
 		B565DE8728C62035005E36FB /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8628C62035005E36FB /* LogoCell.swift */; };
+		B565DE8928C628B1005E36FB /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8828C628B1005E36FB /* ReusableCell.swift */; };
+		B565DE8B28C628E1005E36FB /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8A28C628E1005E36FB /* PaddingLabel.swift */; };
+		B565DE8D28C628FC005E36FB /* SubscribeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8C28C628FC005E36FB /* SubscribeButton.swift */; };
+		B565DE8F28C6291E005E36FB /* SubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8E28C6291E005E36FB /* SubscribeView.swift */; };
 		B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */; };
 		B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */; };
-		B5E4D74B28C48EAA001BE1F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74A28C48EAA001BE1F3 /* ViewController.swift */; };
+		B5E4D74B28C48EAA001BE1F3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74A28C48EAA001BE1F3 /* MainVC.swift */; };
 		B5E4D74E28C48EAA001BE1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E4D74C28C48EAA001BE1F3 /* Main.storyboard */; };
 		B5E4D75028C48EAC001BE1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */; };
 		B5E4D75328C48EAC001BE1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E4D75128C48EAC001BE1F3 /* LaunchScreen.storyboard */; };
@@ -21,7 +25,7 @@
 		B5E4D75D28C49190001BE1F3 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D75C28C49190001BE1F3 /* Firebase.swift */; };
 		B5E4D75F28C49F5D001BE1F3 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */; };
 		B5E4D76128C4A830001BE1F3 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76028C4A830001BE1F3 /* TitleCell.swift */; };
-		B5E4D76428C4A8A6001BE1F3 /* Dict.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76328C4A8A6001BE1F3 /* Dict.swift */; };
+		B5E4D76428C4A8A6001BE1F3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76328C4A8A6001BE1F3 /* Extensions.swift */; };
 		B5E4D76628C4BF23001BE1F3 /* SubscribeButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76528C4BF23001BE1F3 /* SubscribeButtonCell.swift */; };
 		B5E4D76828C4CE2F001BE1F3 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76728C4CE2F001BE1F3 /* ButtonCell.swift */; };
 		B5E4D76A28C4D7A8001BE1F3 /* TermsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76928C4D7A8001BE1F3 /* TermsCell.swift */; };
@@ -31,10 +35,14 @@
 		B565DE8228C617EB005E36FB /* Deeplinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deeplinker.swift; sourceTree = "<group>"; };
 		B565DE8428C61BCD005E36FB /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
 		B565DE8628C62035005E36FB /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
+		B565DE8828C628B1005E36FB /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		B565DE8A28C628E1005E36FB /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		B565DE8C28C628FC005E36FB /* SubscribeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeButton.swift; sourceTree = "<group>"; };
+		B565DE8E28C6291E005E36FB /* SubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeView.swift; sourceTree = "<group>"; };
 		B5E4D74328C48EAA001BE1F3 /* Paywall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paywall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5E4D74A28C48EAA001BE1F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5E4D74A28C48EAA001BE1F3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B5E4D74D28C48EAA001BE1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5E4D75228C48EAC001BE1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,7 +51,7 @@
 		B5E4D75C28C49190001BE1F3 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		B5E4D76028C4A830001BE1F3 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
-		B5E4D76328C4A8A6001BE1F3 /* Dict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dict.swift; sourceTree = "<group>"; };
+		B5E4D76328C4A8A6001BE1F3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B5E4D76528C4BF23001BE1F3 /* SubscribeButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeButtonCell.swift; sourceTree = "<group>"; };
 		B5E4D76728C4CE2F001BE1F3 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		B5E4D76928C4D7A8001BE1F3 /* TermsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsCell.swift; sourceTree = "<group>"; };
@@ -81,6 +89,56 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B565DE9028C62931005E36FB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */,
+				B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B565DE9128C62939005E36FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B565DE8A28C628E1005E36FB /* PaddingLabel.swift */,
+				B565DE8E28C6291E005E36FB /* SubscribeView.swift */,
+				B565DE8C28C628FC005E36FB /* SubscribeButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B565DE9228C62945005E36FB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D75C28C49190001BE1F3 /* Firebase.swift */,
+				B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */,
+				B5E4D76328C4A8A6001BE1F3 /* Extensions.swift */,
+				B565DE8228C617EB005E36FB /* Deeplinker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B565DE9328C62958005E36FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */,
+				B5E4D75128C48EAC001BE1F3 /* LaunchScreen.storyboard */,
+				B5E4D75428C48EAC001BE1F3 /* Info.plist */,
+				B5E4D75A28C49170001BE1F3 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B565DE9428C629AF005E36FB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D74A28C48EAA001BE1F3 /* MainVC.swift */,
+				B5E4D74C28C48EAA001BE1F3 /* Main.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		B5E4D73A28C48EA9001BE1F3 = {
 			isa = PBXGroup;
 			children = (
@@ -102,19 +160,12 @@
 		B5E4D74528C48EAA001BE1F3 /* Paywall */ = {
 			isa = PBXGroup;
 			children = (
-				B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */,
-				B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */,
-				B5E4D74A28C48EAA001BE1F3 /* ViewController.swift */,
+				B565DE9028C62931005E36FB /* App */,
 				B5E4D76228C4A834001BE1F3 /* Cells */,
-				B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */,
-				B5E4D75C28C49190001BE1F3 /* Firebase.swift */,
-				B5E4D76328C4A8A6001BE1F3 /* Dict.swift */,
-				B565DE8228C617EB005E36FB /* Deeplinker.swift */,
-				B5E4D74C28C48EAA001BE1F3 /* Main.storyboard */,
-				B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */,
-				B5E4D75128C48EAC001BE1F3 /* LaunchScreen.storyboard */,
-				B5E4D75428C48EAC001BE1F3 /* Info.plist */,
-				B5E4D75A28C49170001BE1F3 /* GoogleService-Info.plist */,
+				B565DE9228C62945005E36FB /* Helpers */,
+				B565DE9328C62958005E36FB /* Resources */,
+				B565DE9428C629AF005E36FB /* Screens */,
+				B565DE9128C62939005E36FB /* Views */,
 			);
 			path = Paywall;
 			sourceTree = "<group>";
@@ -128,6 +179,7 @@
 				B5E4D76928C4D7A8001BE1F3 /* TermsCell.swift */,
 				B565DE8428C61BCD005E36FB /* BoxCell.swift */,
 				B565DE8628C62035005E36FB /* LogoCell.swift */,
+				B565DE8828C628B1005E36FB /* ReusableCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -249,17 +301,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E4D76128C4A830001BE1F3 /* TitleCell.swift in Sources */,
-				B5E4D74B28C48EAA001BE1F3 /* ViewController.swift in Sources */,
+				B5E4D74B28C48EAA001BE1F3 /* MainVC.swift in Sources */,
 				B565DE8728C62035005E36FB /* LogoCell.swift in Sources */,
 				B5E4D76828C4CE2F001BE1F3 /* ButtonCell.swift in Sources */,
 				B5E4D76628C4BF23001BE1F3 /* SubscribeButtonCell.swift in Sources */,
 				B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */,
+				B565DE8B28C628E1005E36FB /* PaddingLabel.swift in Sources */,
 				B5E4D76A28C4D7A8001BE1F3 /* TermsCell.swift in Sources */,
 				B5E4D75D28C49190001BE1F3 /* Firebase.swift in Sources */,
 				B5E4D75F28C49F5D001BE1F3 /* DataSource.swift in Sources */,
-				B5E4D76428C4A8A6001BE1F3 /* Dict.swift in Sources */,
+				B5E4D76428C4A8A6001BE1F3 /* Extensions.swift in Sources */,
+				B565DE8F28C6291E005E36FB /* SubscribeView.swift in Sources */,
 				B565DE8528C61BCD005E36FB /* BoxCell.swift in Sources */,
 				B565DE8328C617EB005E36FB /* Deeplinker.swift in Sources */,
+				B565DE8928C628B1005E36FB /* ReusableCell.swift in Sources */,
+				B565DE8D28C628FC005E36FB /* SubscribeButton.swift in Sources */,
 				B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +466,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95D67VXK3X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Paywall/Info.plist;
+				INFOPLIST_FILE = Paywall/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -439,7 +495,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95D67VXK3X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Paywall/Info.plist;
+				INFOPLIST_FILE = Paywall/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
