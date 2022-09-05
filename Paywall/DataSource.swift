@@ -75,10 +75,6 @@ class ReusableCell: UITableViewCell {
     }
 }
 
-class LogoCell: ReusableCell {
-    
-}
-
 extension UIView {
     
     @IBInspectable var cornerRadius: CGFloat {

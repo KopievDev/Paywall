@@ -137,6 +137,20 @@ extension Dictionary {
         }
     }
     
+    subscript(gf0 idx: Key) -> CGFloat? {
+        get {
+            if let res = self[idx] as? CGFloat {
+                return res
+            }
+            return nil
+        }
+        set {
+            if let v = newValue as? Value {
+                self[idx] = v
+            }
+        }
+    }
+    
     subscript(f0 idx: Key) -> Float? {
         get {
             if let res = self[idx] as? Float {

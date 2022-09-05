@@ -44,12 +44,7 @@ class MainVC: UIViewController, Storyboarded {
             print("TRYYYY!!!")
         }
         
-        let deeplincAction: StringBlock  = { [weak self] deeplink in
-            print(deeplink)
-            let vc = MainVC.instantiate() as? MainVC
-            vc?.screenName = "onboarding"
-            self?.present(vc!, animated: true)
-        }
+        let deeplincAction: StringBlock  = { Deeplinker.route(to: $0) }
         
         let termsAction: IndexBlock = { number in
             print(number)

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AB928D4737352FC3773BC168 /* Pods_Paywall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17855D0ACB7F27704687DA9 /* Pods_Paywall.framework */; };
+		B565DE8328C617EB005E36FB /* Deeplinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8228C617EB005E36FB /* Deeplinker.swift */; };
+		B565DE8528C61BCD005E36FB /* BoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8428C61BCD005E36FB /* BoxCell.swift */; };
+		B565DE8728C62035005E36FB /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8628C62035005E36FB /* LogoCell.swift */; };
 		B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */; };
 		B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */; };
 		B5E4D74B28C48EAA001BE1F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74A28C48EAA001BE1F3 /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B565DE8228C617EB005E36FB /* Deeplinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deeplinker.swift; sourceTree = "<group>"; };
+		B565DE8428C61BCD005E36FB /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
+		B565DE8628C62035005E36FB /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
 		B5E4D74328C48EAA001BE1F3 /* Paywall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paywall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 				B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */,
 				B5E4D75C28C49190001BE1F3 /* Firebase.swift */,
 				B5E4D76328C4A8A6001BE1F3 /* Dict.swift */,
+				B565DE8228C617EB005E36FB /* Deeplinker.swift */,
 				B5E4D74C28C48EAA001BE1F3 /* Main.storyboard */,
 				B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */,
 				B5E4D75128C48EAC001BE1F3 /* LaunchScreen.storyboard */,
@@ -119,6 +126,8 @@
 				B5E4D76528C4BF23001BE1F3 /* SubscribeButtonCell.swift */,
 				B5E4D76728C4CE2F001BE1F3 /* ButtonCell.swift */,
 				B5E4D76928C4D7A8001BE1F3 /* TermsCell.swift */,
+				B565DE8428C61BCD005E36FB /* BoxCell.swift */,
+				B565DE8628C62035005E36FB /* LogoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -241,6 +250,7 @@
 			files = (
 				B5E4D76128C4A830001BE1F3 /* TitleCell.swift in Sources */,
 				B5E4D74B28C48EAA001BE1F3 /* ViewController.swift in Sources */,
+				B565DE8728C62035005E36FB /* LogoCell.swift in Sources */,
 				B5E4D76828C4CE2F001BE1F3 /* ButtonCell.swift in Sources */,
 				B5E4D76628C4BF23001BE1F3 /* SubscribeButtonCell.swift in Sources */,
 				B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */,
@@ -248,6 +258,8 @@
 				B5E4D75D28C49190001BE1F3 /* Firebase.swift in Sources */,
 				B5E4D75F28C49F5D001BE1F3 /* DataSource.swift in Sources */,
 				B5E4D76428C4A8A6001BE1F3 /* Dict.swift in Sources */,
+				B565DE8528C61BCD005E36FB /* BoxCell.swift in Sources */,
+				B565DE8328C617EB005E36FB /* Deeplinker.swift in Sources */,
 				B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
