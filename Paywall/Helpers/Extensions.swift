@@ -32,6 +32,7 @@ extension String {
     static let deeplinks = "deeplinks"
     static let height = "height"
     static let weight = "weight"
+    static let width = "width"
     static let id = "id"
     static let fixSize = "fixSize"
     static let paywall = "paywall"

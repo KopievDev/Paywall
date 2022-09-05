@@ -18,6 +18,7 @@
 		B565DE9628C62C24005E36FB /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9528C62C24005E36FB /* EmptyCell.swift */; };
 		B565DE9828C62C3B005E36FB /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9728C62C3B005E36FB /* ImageCell.swift */; };
 		B565DE9A28C62C57005E36FB /* CheckMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9928C62C57005E36FB /* CheckMarkView.swift */; };
+		B565DE9C28C62F38005E36FB /* StringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9B28C62F38005E36FB /* StringConfig.swift */; };
 		B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */; };
 		B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */; };
 		B5E4D74B28C48EAA001BE1F3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74A28C48EAA001BE1F3 /* MainVC.swift */; };
@@ -45,6 +46,7 @@
 		B565DE9528C62C24005E36FB /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		B565DE9728C62C3B005E36FB /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B565DE9928C62C57005E36FB /* CheckMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkView.swift; sourceTree = "<group>"; };
+		B565DE9B28C62F38005E36FB /* StringConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConfig.swift; sourceTree = "<group>"; };
 		B5E4D74328C48EAA001BE1F3 /* Paywall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paywall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				B5E4D75C28C49190001BE1F3 /* Firebase.swift */,
+				B565DE9B28C62F38005E36FB /* StringConfig.swift */,
 				B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */,
 				B5E4D76328C4A8A6001BE1F3 /* Extensions.swift */,
 				B565DE8228C617EB005E36FB /* Deeplinker.swift */,
@@ -327,6 +330,7 @@
 				B565DE8328C617EB005E36FB /* Deeplinker.swift in Sources */,
 				B565DE8928C628B1005E36FB /* ReusableCell.swift in Sources */,
 				B565DE8D28C628FC005E36FB /* SubscribeButton.swift in Sources */,
+				B565DE9C28C62F38005E36FB /* StringConfig.swift in Sources */,
 				B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */,
 				B565DE9628C62C24005E36FB /* EmptyCell.swift in Sources */,
 			);
