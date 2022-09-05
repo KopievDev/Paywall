@@ -42,6 +42,10 @@ extension String {
     static let buttons = "buttons"
     static let action = "action"
     static let deeplinkAction = "deeplinkAction"
+    static let shadow = "shadow"
+    static let radius = "radius"
+    static let background = "background"
+    static let withUnderline = "withUnderline"
 
     
 }
