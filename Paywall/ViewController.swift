@@ -63,6 +63,7 @@ class MainVC: UIViewController, Storyboarded {
             
             if cells[index].reuseId == "TermsCell" {
                 cells[index].data["action"] = termsAction
+                cells[index].data["deeplinks"] = deeplincAction
             }
         }
     }
