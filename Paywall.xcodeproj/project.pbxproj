@@ -208,6 +208,7 @@
 				B5E4D74028C48EAA001BE1F3 /* Frameworks */,
 				B5E4D74128C48EAA001BE1F3 /* Resources */,
 				A24A1B8D84D45C9A4A219335 /* [CP] Embed Pods Frameworks */,
+				1679D917D0C59B962C4A9A76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +267,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1679D917D0C59B962C4A9A76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Paywall/Pods-Paywall-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Paywall/Pods-Paywall-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Paywall/Pods-Paywall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A24A1B8D84D45C9A4A219335 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

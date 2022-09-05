@@ -21,5 +21,14 @@
 			</array>
 		</dict>
 	</dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+              <string>appcenter-a15e0387-c170-4a12-9a95-096e246f27ac</string>
+          </array>
+      </dict>
+    </array>
 </dict>
 </plist>

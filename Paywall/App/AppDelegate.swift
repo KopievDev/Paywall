@@ -7,6 +7,11 @@
 
 import UIKit
 import FirebaseCore
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+import AppCenterDistribute
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        AppCenter.start(withAppSecret: "a15e0387-c170-4a12-9a95-096e246f27ac", services:[
+          Analytics.self,
+          Crashes.self,
+          Distribute.self
+        ])
         return true
     }
 
