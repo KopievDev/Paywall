@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ButtonCell: ReusableCell {
+final class ButtonCell: ReusableCell {
     
     @IBOutlet var button: UIButton!
     var action: VoidBlock?
@@ -15,8 +15,8 @@ class ButtonCell: ReusableCell {
     var deeplink: String?
     override func render(data: Cell) {
         let config = data.data
-        action = config["action"] as? VoidBlock
-        deeplinkAction = config["deeplinkAction"] as? StringBlock
+        action = config[.action] as? VoidBlock
+        deeplinkAction = config[.deeplinkAction] as? StringBlock
         deeplink = config[s0: .deeplink]
         button.setTitle(config[s: .text], for: .normal)
         button.backgroundColor = .init(hexString: config[s:.color])

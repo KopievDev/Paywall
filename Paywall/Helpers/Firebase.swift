@@ -6,12 +6,8 @@
 //
 
 import Firebase
-typealias Cells = [Cell]
-typealias ArrayBlock = ([[String:Any]]) -> Void
-typealias CellsBlock = (Cells) -> Void
-typealias VoidBlock = () -> Void
 
-class Firebase {
+final class Firebase {
     static private let paywall = Firestore.firestore().collection("paywall")
     static private let onboarding = Firestore.firestore().collection("onboarding")
 
@@ -57,7 +53,7 @@ class Firebase {
     }
 
     static private  func fetch(from document:QueryDocumentSnapshot)-> Cell {
-        Cell(reuseId: document.data()[s:"id"], data: document.data()[d:"data"])
+        Cell(reuseId: document.data()[s:.id], data: document.data()[d:.data])
     }
 }
 

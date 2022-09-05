@@ -6,13 +6,12 @@
 //
 
 import UIKit
-typealias IndexBlock = (Int) -> Void
-typealias StringBlock = (String) -> Void
 
-class MainVC: UIViewController, Storyboarded {
-
-    var screenName: String = "paywall"
+final class MainVC: UIViewController, Storyboarded {
+    // MARK: - Properties
     @IBOutlet var tableView: UITableView!
+    private var screenName: String = "paywall"
+    var emptyViewInserted = false
     lazy var dataSource: Listable = DataSource(tableView: tableView, data: cells)
     private var cells: Cells = [] {
         didSet {
@@ -20,8 +19,7 @@ class MainVC: UIViewController, Storyboarded {
             fixScreen()
         }
     }
-    
-    var emptyViewInserted = false
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +28,12 @@ class MainVC: UIViewController, Storyboarded {
             self?.addAction()
         }
     }
+    // MARK: - Helpers
     
-    func addAction() {
+    func set(screenName: String) {
+        self.screenName = screenName
+    }
+    private func addAction() {
         let subscribeBlock: IndexBlock = { number in
             switch number {
             case 0: print("DId WEEK")
@@ -50,20 +52,19 @@ class MainVC: UIViewController, Storyboarded {
             print(number)
         }
         
-        
         for index in 0..<cells.count {
             if cells[index].reuseId == "SubscribeButtonCell" {
-                cells[index].data["action"] = subscribeBlock
+                cells[index].data[.action] = subscribeBlock
             }
             
             if cells[index].reuseId == "ButtonCell" {
-                cells[index].data["action"] = tryAction
-                cells[index].data["deeplinkAction"] = deeplincAction
+                cells[index].data[.action] = tryAction
+                cells[index].data[.deeplinkAction] = deeplincAction
             }
             
             if cells[index].reuseId == "TermsCell" {
-                cells[index].data["action"] = termsAction
-                cells[index].data["deeplinks"] = deeplincAction
+                cells[index].data[.action] = termsAction
+                cells[index].data[.deeplinkAction] = deeplincAction
             }
         }
     }
@@ -71,7 +72,7 @@ class MainVC: UIViewController, Storyboarded {
     func fixScreen() {
         if tableView.isNeedInsertEmptyCell && !emptyViewInserted {
             if let index = cells.firstIndex(where: { $0.reuseId == "ImageCell" }) {
-                cells.insert(Cell(reuseId: "EmptyCell", data: ["height": tableView.diffHeight]), at: index + 1)
+                cells.insert(Cell(reuseId: "EmptyCell", data: [.height: tableView.diffHeight]), at: index + 1)
                 emptyViewInserted = true
             }
         }

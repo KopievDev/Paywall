@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BoxCell: ReusableCell {
+final class BoxCell: ReusableCell {
     
     @IBOutlet var heightCnstr: NSLayoutConstraint!
     @IBOutlet var weightCnstr: NSLayoutConstraint!
@@ -15,15 +15,15 @@ class BoxCell: ReusableCell {
 
     override func render(data: Cell) {
         let config = data.data
-        let height = config[gf:"height"]
-        let weight = config[gf:"weight"]
+        let height = config[gf:.height]
+        let weight = config[gf:.weight]
         heightCnstr.isActive = false
         weightCnstr.isActive = false
         heightCnstr.constant = height
         weightCnstr.constant = weight
         heightCnstr.isActive = true
         weightCnstr.isActive = true
-        boxView.backgroundColor = .init(hexString: config[s:"color"])
+        boxView.backgroundColor = .init(hexString: config[s:.color])
         layoutIfNeeded()
     }
 }

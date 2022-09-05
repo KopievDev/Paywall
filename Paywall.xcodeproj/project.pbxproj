@@ -15,6 +15,9 @@
 		B565DE8B28C628E1005E36FB /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8A28C628E1005E36FB /* PaddingLabel.swift */; };
 		B565DE8D28C628FC005E36FB /* SubscribeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8C28C628FC005E36FB /* SubscribeButton.swift */; };
 		B565DE8F28C6291E005E36FB /* SubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE8E28C6291E005E36FB /* SubscribeView.swift */; };
+		B565DE9628C62C24005E36FB /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9528C62C24005E36FB /* EmptyCell.swift */; };
+		B565DE9828C62C3B005E36FB /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9728C62C3B005E36FB /* ImageCell.swift */; };
+		B565DE9A28C62C57005E36FB /* CheckMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9928C62C57005E36FB /* CheckMarkView.swift */; };
 		B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */; };
 		B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */; };
 		B5E4D74B28C48EAA001BE1F3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74A28C48EAA001BE1F3 /* MainVC.swift */; };
@@ -39,6 +42,9 @@
 		B565DE8A28C628E1005E36FB /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		B565DE8C28C628FC005E36FB /* SubscribeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeButton.swift; sourceTree = "<group>"; };
 		B565DE8E28C6291E005E36FB /* SubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeView.swift; sourceTree = "<group>"; };
+		B565DE9528C62C24005E36FB /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		B565DE9728C62C3B005E36FB /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		B565DE9928C62C57005E36FB /* CheckMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkView.swift; sourceTree = "<group>"; };
 		B5E4D74328C48EAA001BE1F3 /* Paywall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paywall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 			children = (
 				B565DE8A28C628E1005E36FB /* PaddingLabel.swift */,
 				B565DE8E28C6291E005E36FB /* SubscribeView.swift */,
+				B565DE9928C62C57005E36FB /* CheckMarkView.swift */,
 				B565DE8C28C628FC005E36FB /* SubscribeButton.swift */,
 			);
 			path = Views;
@@ -174,7 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				B5E4D76028C4A830001BE1F3 /* TitleCell.swift */,
+				B565DE9728C62C3B005E36FB /* ImageCell.swift */,
 				B5E4D76528C4BF23001BE1F3 /* SubscribeButtonCell.swift */,
+				B565DE9528C62C24005E36FB /* EmptyCell.swift */,
 				B5E4D76728C4CE2F001BE1F3 /* ButtonCell.swift */,
 				B5E4D76928C4D7A8001BE1F3 /* TermsCell.swift */,
 				B565DE8428C61BCD005E36FB /* BoxCell.swift */,
@@ -303,12 +312,14 @@
 				B5E4D76128C4A830001BE1F3 /* TitleCell.swift in Sources */,
 				B5E4D74B28C48EAA001BE1F3 /* MainVC.swift in Sources */,
 				B565DE8728C62035005E36FB /* LogoCell.swift in Sources */,
+				B565DE9828C62C3B005E36FB /* ImageCell.swift in Sources */,
 				B5E4D76828C4CE2F001BE1F3 /* ButtonCell.swift in Sources */,
 				B5E4D76628C4BF23001BE1F3 /* SubscribeButtonCell.swift in Sources */,
 				B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */,
 				B565DE8B28C628E1005E36FB /* PaddingLabel.swift in Sources */,
 				B5E4D76A28C4D7A8001BE1F3 /* TermsCell.swift in Sources */,
 				B5E4D75D28C49190001BE1F3 /* Firebase.swift in Sources */,
+				B565DE9A28C62C57005E36FB /* CheckMarkView.swift in Sources */,
 				B5E4D75F28C49F5D001BE1F3 /* DataSource.swift in Sources */,
 				B5E4D76428C4A8A6001BE1F3 /* Extensions.swift in Sources */,
 				B565DE8F28C6291E005E36FB /* SubscribeView.swift in Sources */,
@@ -317,6 +328,7 @@
 				B565DE8928C628B1005E36FB /* ReusableCell.swift in Sources */,
 				B565DE8D28C628FC005E36FB /* SubscribeButton.swift in Sources */,
 				B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */,
+				B565DE9628C62C24005E36FB /* EmptyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

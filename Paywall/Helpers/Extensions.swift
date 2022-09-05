@@ -6,6 +6,14 @@
 //
 
 import UIKit
+
+typealias IndexBlock = (Int) -> Void
+typealias StringBlock = (String) -> Void
+typealias Cells = [Cell]
+typealias ArrayBlock = ([[String:Any]]) -> Void
+typealias CellsBlock = (Cells) -> Void
+typealias VoidBlock = () -> Void
+
 extension String {
     static let data = "data"
     static let reuse = "reuse"
@@ -21,7 +29,20 @@ extension String {
     static let size = "size"
     static let color = "color"
     static let deeplink = "deeplink"
+    static let deeplinks = "deeplinks"
+    static let height = "height"
+    static let weight = "weight"
+    static let id = "id"
+    static let fixSize = "fixSize"
+    static let paywall = "paywall"
+    static let array = "array"
+    static let image = "image"
+    static let selected = "selected"
+    static let buttons = "buttons"
+    static let action = "action"
+    static let deeplinkAction = "deeplinkAction"
 
+    
 }
 
 

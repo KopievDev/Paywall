@@ -7,13 +7,13 @@
 
 import UIKit
 
-class Deeplinker {
+final class Deeplinker {
     
     static func route(to deeplink: String) {
         guard let url = URL(string: deeplink), let vc = MainVC.instantiate() as? MainVC else { return }
         let query = url.queryDictionary
-        vc.emptyViewInserted = query?[b:"fixSize"] == true
-        vc.screenName = url.host ?? "paywall"
+        vc.emptyViewInserted = query?[b: .fixSize] == true
+        vc.set(screenName: url.host ?? .paywall)
         UIApplication.topViewController()?.present(vc, animated: true)
     }
 }
