@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 final class MainVC: UIViewController, Storyboarded {
     // MARK: - Properties
@@ -13,6 +14,8 @@ final class MainVC: UIViewController, Storyboarded {
     private var screenName: String = "paywall"
     var emptyViewInserted = false
     lazy var dataSource: Listable = DataSource(tableView: tableView, data: cells)
+    weak var listner: ListenerRegistration?
+    
     private var cells: Cells = [] {
         didSet {
             dataSource.set(data: cells)
@@ -23,10 +26,25 @@ final class MainVC: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Firebase.getScreen(name: screenName) {  [weak self] in
+       listner = Firebase.shared.getScreen(name: screenName) {  [weak self] in
             self?.cells = $0
             self?.addAction()
+            print("UPDATE SCREEN")
         }
+        
+//        let message = Message(to: "emDZMng0_kaWrxK6EYwd6E:APA91bHdcbBlvIjRrtl_r7LZAylVt40WpHFncPkP7EHWstOW-qcsJAa2caCScnOA-CoUPMOxPJYQF0Lf0j6BS5EyCIcNr6_W7gKH899VlzkWf_KS3Wqi6m0LI5x0Oi6FP_Hta0Ghv1rA", notification: Notification(subtitle: "Hello", title: "Title", body: "Body text", badge: 1))
+//
+//        Messaging.send(message: message)
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        listner?.remove()
+        listner = nil
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     // MARK: - Helpers
     

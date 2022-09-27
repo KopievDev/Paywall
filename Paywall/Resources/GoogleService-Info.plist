@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>890650478997-lula2s98mqs28fpmgol37326lkfe3i6h.apps.googleusercontent.com</string>
+	<string>890650478997-kp8t0dsqaa2p1hjq0fugv4knmlomej97.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.890650478997-lula2s98mqs28fpmgol37326lkfe3i6h</string>
+	<string>com.googleusercontent.apps.890650478997-kp8t0dsqaa2p1hjq0fugv4knmlomej97</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAtB8uO4WA7Ied54YXzgIKa4N1r4wkYPOY</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,22 +13,24 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>ru.mustdev.Paywall</string>
+	<string>ru.tui.test</string>
 	<key>PROJECT_ID</key>
 	<string>paywall-3a41a</string>
 	<key>STORAGE_BUCKET</key>
 	<string>paywall-3a41a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:890650478997:ios:87aedcf5e54eafa9a1ce9c</string>
+	<string>1:890650478997:ios:d5a407f47c0727e9a1ce9c</string>
+	<key>DATABASE_URL</key>
+	<string>https://paywall-3a41a-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

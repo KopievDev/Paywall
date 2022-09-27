@@ -26,3 +26,24 @@ class ReusableCell: UITableViewCell {
     }
 }
 
+class ImageTitleCell: ReusableCell {
+    
+    enum ImageType: String {
+        case ads, saving, tracking, popup, password
+        var imageName: String { "icon_\(rawValue)" }
+    }
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var imgView: UIImageView!
+
+    override func render(data: Cell) {
+        let raw = data.data
+        if let type = ImageType(rawValue: raw[s: .image]) {
+            imgView.image = UIImage(named: type.imageName)
+        } else {
+            imgView.setImage(urlString: raw[s: .image])
+        }
+        
+        titleLabel.text = raw[s: .text]
+    }
+}

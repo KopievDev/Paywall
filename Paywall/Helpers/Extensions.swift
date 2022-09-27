@@ -45,7 +45,7 @@ extension String {
     static let shadow = "shadow"
     static let radius = "radius"
     static let background = "background"
-    static let withUnderline = "withUnderline"
+    static let withUnderline = "with_underline"
 
     
 }

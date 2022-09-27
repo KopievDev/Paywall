@@ -19,13 +19,13 @@
 		B565DE9828C62C3B005E36FB /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9728C62C3B005E36FB /* ImageCell.swift */; };
 		B565DE9A28C62C57005E36FB /* CheckMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9928C62C57005E36FB /* CheckMarkView.swift */; };
 		B565DE9C28C62F38005E36FB /* StringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565DE9B28C62F38005E36FB /* StringConfig.swift */; };
+		B5A43BF728C9EB4F006EBA45 /* firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A43BF628C9EB4F006EBA45 /* firebase.swift */; };
 		B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */; };
 		B5E4D74928C48EAA001BE1F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */; };
 		B5E4D74B28C48EAA001BE1F3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D74A28C48EAA001BE1F3 /* MainVC.swift */; };
 		B5E4D74E28C48EAA001BE1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E4D74C28C48EAA001BE1F3 /* Main.storyboard */; };
 		B5E4D75028C48EAC001BE1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */; };
 		B5E4D75328C48EAC001BE1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E4D75128C48EAC001BE1F3 /* LaunchScreen.storyboard */; };
-		B5E4D75B28C49171001BE1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5E4D75A28C49170001BE1F3 /* GoogleService-Info.plist */; };
 		B5E4D75D28C49190001BE1F3 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D75C28C49190001BE1F3 /* Firebase.swift */; };
 		B5E4D75F28C49F5D001BE1F3 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */; };
 		B5E4D76128C4A830001BE1F3 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76028C4A830001BE1F3 /* TitleCell.swift */; };
@@ -33,9 +33,12 @@
 		B5E4D76628C4BF23001BE1F3 /* SubscribeButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76528C4BF23001BE1F3 /* SubscribeButtonCell.swift */; };
 		B5E4D76828C4CE2F001BE1F3 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76728C4CE2F001BE1F3 /* ButtonCell.swift */; };
 		B5E4D76A28C4D7A8001BE1F3 /* TermsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D76928C4D7A8001BE1F3 /* TermsCell.swift */; };
+		B5EF4A3728E32CC7008062FB /* Merginable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF4A3628E32CC6008062FB /* Merginable.swift */; };
+		B5F837CF28D3452C006FF40B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5F837CE28D3452B006FF40B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B526421628D4713900A5DDBE /* Paywall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Paywall.entitlements; sourceTree = "<group>"; };
 		B565DE8228C617EB005E36FB /* Deeplinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deeplinker.swift; sourceTree = "<group>"; };
 		B565DE8428C61BCD005E36FB /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
 		B565DE8628C62035005E36FB /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		B565DE9728C62C3B005E36FB /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B565DE9928C62C57005E36FB /* CheckMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkView.swift; sourceTree = "<group>"; };
 		B565DE9B28C62F38005E36FB /* StringConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConfig.swift; sourceTree = "<group>"; };
+		B5A43BF628C9EB4F006EBA45 /* firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebase.swift; sourceTree = "<group>"; };
 		B5E4D74328C48EAA001BE1F3 /* Paywall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paywall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4D74628C48EAA001BE1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E4D74828C48EAA001BE1F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +59,6 @@
 		B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5E4D75228C48EAC001BE1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5E4D75428C48EAC001BE1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5E4D75A28C49170001BE1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5E4D75C28C49190001BE1F3 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		B5E4D75E28C49F5D001BE1F3 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		B5E4D76028C4A830001BE1F3 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 		B5E4D76528C4BF23001BE1F3 /* SubscribeButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeButtonCell.swift; sourceTree = "<group>"; };
 		B5E4D76728C4CE2F001BE1F3 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		B5E4D76928C4D7A8001BE1F3 /* TermsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsCell.swift; sourceTree = "<group>"; };
+		B5EF4A3628E32CC6008062FB /* Merginable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merginable.swift; sourceTree = "<group>"; };
+		B5F837CE28D3452B006FF40B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C32B177D2780FA1382941CCD /* Pods-Paywall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall.debug.xcconfig"; path = "Target Support Files/Pods-Paywall/Pods-Paywall.debug.xcconfig"; sourceTree = "<group>"; };
 		D7E5D8D7AF596D5D283ED014 /* Pods-Paywall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall.release.xcconfig"; path = "Target Support Files/Pods-Paywall/Pods-Paywall.release.xcconfig"; sourceTree = "<group>"; };
 		F17855D0ACB7F27704687DA9 /* Pods_Paywall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paywall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,8 +139,8 @@
 			children = (
 				B5E4D74F28C48EAC001BE1F3 /* Assets.xcassets */,
 				B5E4D75128C48EAC001BE1F3 /* LaunchScreen.storyboard */,
+				B5F837CE28D3452B006FF40B /* GoogleService-Info.plist */,
 				B5E4D75428C48EAC001BE1F3 /* Info.plist */,
-				B5E4D75A28C49170001BE1F3 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				B5E4D74A28C48EAA001BE1F3 /* MainVC.swift */,
+				B5A43BF628C9EB4F006EBA45 /* firebase.swift */,
 				B5E4D74C28C48EAA001BE1F3 /* Main.storyboard */,
 			);
 			path = Screens;
@@ -170,6 +176,7 @@
 		B5E4D74528C48EAA001BE1F3 /* Paywall */ = {
 			isa = PBXGroup;
 			children = (
+				B526421628D4713900A5DDBE /* Paywall.entitlements */,
 				B565DE9028C62931005E36FB /* App */,
 				B5E4D76228C4A834001BE1F3 /* Cells */,
 				B565DE9228C62945005E36FB /* Helpers */,
@@ -192,6 +199,7 @@
 				B565DE8428C61BCD005E36FB /* BoxCell.swift */,
 				B565DE8628C62035005E36FB /* LogoCell.swift */,
 				B565DE8828C628B1005E36FB /* ReusableCell.swift */,
+				B5EF4A3628E32CC6008062FB /* Merginable.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -257,9 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5E4D75B28C49171001BE1F3 /* GoogleService-Info.plist in Resources */,
 				B5E4D75328C48EAC001BE1F3 /* LaunchScreen.storyboard in Resources */,
 				B5E4D75028C48EAC001BE1F3 /* Assets.xcassets in Resources */,
+				B5F837CF28D3452C006FF40B /* GoogleService-Info.plist in Resources */,
 				B5E4D74E28C48EAA001BE1F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +342,7 @@
 				B5E4D74B28C48EAA001BE1F3 /* MainVC.swift in Sources */,
 				B565DE8728C62035005E36FB /* LogoCell.swift in Sources */,
 				B565DE9828C62C3B005E36FB /* ImageCell.swift in Sources */,
+				B5A43BF728C9EB4F006EBA45 /* firebase.swift in Sources */,
 				B5E4D76828C4CE2F001BE1F3 /* ButtonCell.swift in Sources */,
 				B5E4D76628C4BF23001BE1F3 /* SubscribeButtonCell.swift in Sources */,
 				B5E4D74728C48EAA001BE1F3 /* AppDelegate.swift in Sources */,
@@ -345,6 +354,7 @@
 				B5E4D76428C4A8A6001BE1F3 /* Extensions.swift in Sources */,
 				B565DE8F28C6291E005E36FB /* SubscribeView.swift in Sources */,
 				B565DE8528C61BCD005E36FB /* BoxCell.swift in Sources */,
+				B5EF4A3728E32CC7008062FB /* Merginable.swift in Sources */,
 				B565DE8328C617EB005E36FB /* Deeplinker.swift in Sources */,
 				B565DE8928C628B1005E36FB /* ReusableCell.swift in Sources */,
 				B565DE8D28C628FC005E36FB /* SubscribeButton.swift in Sources */,
@@ -496,9 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_ENTITLEMENTS = Paywall/Paywall.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = A8Y93U7TZ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Paywall/Resources/Info.plist;
@@ -507,15 +518,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tui.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = FSDEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,9 +539,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_ENTITLEMENTS = Paywall/Paywall.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = A8Y93U7TZ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Paywall/Resources/Info.plist;
@@ -539,15 +551,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tui.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = FSDEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
