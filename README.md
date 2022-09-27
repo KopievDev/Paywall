@@ -25,7 +25,7 @@
 ``` swift
    @IBAction private func clickAnswer(_ sender: UIButton) {
         let currentQuest = questions[currentQuestionIndex]
-        var answerQuestion = sender.tag == 1 
+        let answerQuestion = sender.tag == 1 
         showAnswerResult(isCorrect: answerQuestion == currentQuest.correctAnswer)
     }
 ```
